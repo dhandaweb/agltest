@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CatListComponent } from './cat-list/cat-list.component';
 
 @Component({
   selector: 'app-root',
