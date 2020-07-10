@@ -7,5 +7,5 @@ import { CatListComponent } from './cat-list/cat-list.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'agl-test';
+  title = 'AGL - Test - Developed by Dharminder Dhanda';
 }

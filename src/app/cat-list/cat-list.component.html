@@ -1,35 +1,41 @@
-<div class="results-container">
-    <div class="row">
-        <div class="col-xs-12 filter-container">
-          Cat name sort order is 
+<div class="container">
+  <div class="row subheder">
+    <div class="col-xs-12 ">
+    <h3>Cat owner - By Gender</h3>
+    </div>
+  </div>   
+  
+  <div class="row">
+        <div class="col-xs-12 shadowBottom" >
+          <h5>Sort Cats by: </h5>
           <input type="radio" id="asc" name="sortOrder" value="asc" [(ngModel)]="catSortOrder" (change) ="handleChange()"><label for="asc" >Ascending</label>
           <input type="radio" id="desc" name="sortOrder" value="desc"  [(ngModel)]="catSortOrder" (change) ="handleChange()"><label for="desc" >Descending</label>
         </div>
       </div>   
-    <div class="row results-container-main-padding">
+    <div class="row shadowBottom">
       <div class="col-xs-12  col-sm-6">
-        <div class="container-fluid ">
+        <div class="container">
           <div class="row">
-            <div class="col-xs-12 row-padding">
-                <h4>Owner - Male</h4>
+            <div class="col-xs-12">
+                <h4>Male</h4>
             </div>
           </div>
-          <div class="row row-indent" *ngFor="let catName of maleOwnedCats  let i = index">
-            <div id="male-owned-cats{{i}}" class="col-xs-12 male-owned-cats">
+          <div class="row" *ngFor="let catName of maleOwnedCats  let i = index">
+            <div id="maleCats{{i}}" class="col-xs-12">
                 {{ catName }}
             </div>
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6">
-        <div class="container-fluid ">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-12 row-padding">
-                <h4>Owner - Female</h4>
+            <div class="col-xs-12">
+                <h4>Female</h4>
             </div>
           </div>
-          <div class="row row-indent" *ngFor="let catName of femaleOwnedCats let i = index">
-            <div id="female-owned-cats{{i}}" class="col-xs-12 female-owned-cats">
+          <div class="row" *ngFor="let catName of femaleOwnedCats let i = index">
+            <div id="femaleCats{{i}}" class="col-xs-12">
                 {{ catName }}
             </div>
           </div>

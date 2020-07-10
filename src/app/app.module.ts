@@ -6,11 +6,15 @@ import { CatListComponent } from './cat-list/cat-list.component';
 import { CatListService } from './cart-list-service/cat-list.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CatListComponent
+    CatListComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
