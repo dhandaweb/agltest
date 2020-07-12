@@ -18,7 +18,6 @@ export interface IOwner {
 })
 
 export class CatListService {
-
     constructor(private http: HttpClient) {}
 
     getPetsAndOwners() {

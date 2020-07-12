@@ -20,16 +20,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'agl-test'`, () => {
+  it(`should have as title 'AGL - Test - Developed by Dharminder Dhanda'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('agl-test');
+    expect(app.title).toEqual('AGL - Test - Developed by Dharminder Dhanda');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('agl-test app is running!');
-  });
+  
 });

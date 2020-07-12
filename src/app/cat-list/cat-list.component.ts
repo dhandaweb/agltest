@@ -40,6 +40,7 @@ export class CatListComponent implements OnInit {
     return this.catSortOrder === 'asc' ? retval.sort() : retval.sort().reverse();
   }
 
+  
   handleChange(){ 
     this.catSortOrder === 'asc' ? this.maleOwnedCats.sort() : this.maleOwnedCats.sort().reverse();
     this.catSortOrder === 'asc' ? this.femaleOwnedCats.sort() : this.femaleOwnedCats.sort().reverse();
