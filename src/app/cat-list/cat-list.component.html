@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row subheder">
-    <div class="col-xs-12 ">
+    <div id="title" class="col-xs-12 ">
     <h3>Cat owner - By Gender</h3>
     </div>
   </div>   
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="row" *ngFor="let catName of maleOwnedCats  let i = index">
-            <div id="maleCats{{i}}" class="col-xs-12">
+            <div id="maleCatOwner{{i}}" class="col-xs-12 maleCatOwner">
                 {{ catName }}
             </div>
           </div>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="row" *ngFor="let catName of femaleOwnedCats let i = index">
-            <div id="femaleCats{{i}}" class="col-xs-12">
+            <div id="femaleCatOwner{{i}}" class="col-xs-12 femaleCatOwner">
                 {{ catName }}
             </div>
           </div>

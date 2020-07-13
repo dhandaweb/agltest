@@ -5,7 +5,28 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<unknown>;
   }
 
-  getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getDescRadioButtonElement() {
+    return element.all(by.id('desc'));
   }
+
+  getMaleCatOwnerElements() {
+    return element.all(by.css('.maleCatOwner'));
+  }
+
+  getFemaleCatOwnerElements() {
+    return element.all(by.css('.femaleCatOwner'));
+  }
+
+ getMaleCatOwnerText(index: string) {
+   return element(by.css('#maleCatOwner' + index)).getText();
+   
+ }
+
+ getFemaleCatOwnerCatText(index: string) {
+   return element(by.css('#femaleCatOwner' + index)).getText();
+   
+ }
+
+ 
+
 }
